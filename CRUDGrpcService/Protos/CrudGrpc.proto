@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+option csharp_namespace = "CRUDGrpcService";
+
+package CrudGrpc;
+
+// The greeting service definition.
+service Registar{
+	rpc RegistarUsuario(RequestUsuario) returns (baseReturn);  
+}
+service Consultar{
+	rpc ConsultarUsuario(RequestUsuario) returns (baseReturn);  
+}
+service Deletar{
+	rpc DeletarUsuario(RequestUsuario) returns (baseReturn);  
+}
+service Atualizar{
+	rpc AtualizarUsuario(RequestUsuario) returns (baseReturn);  
+}
+
+// The request message containing the user's name.
+message RequestUsuario{
+	int32 identificador = 1;
+	string nome=2;
+	int32 idade = 3;
+	DadosCliente cliente = 4;
+}
+
+message DadosCliente{
+	string numeroConta =1;
+	string agencia = 2;
+	double saldo =3;
+}
+
+// The response message containing the greetings.
+message baseReturn {
+  int32 status =1;
+  string mensagem =2;
+}

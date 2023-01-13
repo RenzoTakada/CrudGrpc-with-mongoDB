@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CRUDGrpcService.props" />
+</Project>

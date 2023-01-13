@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "moWKo9Sxk7GzY29uz/xEFsZoWI+AsdIGLe+GN19eaSk=",
+  "Source": "CRUDGrpcService",
+  "BasePath": "_content/CRUDGrpcService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

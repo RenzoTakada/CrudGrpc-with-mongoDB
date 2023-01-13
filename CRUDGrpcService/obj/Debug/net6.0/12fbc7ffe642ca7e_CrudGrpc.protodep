@@ -1,0 +1,2 @@
+obj\Debug\net6.0\Protos/CrudGrpc.cs \
+obj\Debug\net6.0\Protos/CrudGrpcGrpc.cs: Protos/CrudGrpc.proto
