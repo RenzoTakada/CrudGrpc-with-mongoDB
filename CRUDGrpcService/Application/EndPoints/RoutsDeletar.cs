@@ -1,11 +1,12 @@
-﻿using CRUDGrpcService.Application.UserCase.DeletarUSC;
+﻿
+using CRUDGrpcService.Application.UserCase.DeletarUSC;
 using Grpc.Core;
 
 namespace CRUDGrpcService.Application.Routs
 {
     public class ServiceDeletar : Deletar.DeletarBase
     {
-        private  IUSCDeletar iUSCDeletar;
+        private IUSCDeletar iUSCDeletar;
         public ServiceDeletar(IUSCDeletar _iUSCDeletar)
         {
             iUSCDeletar = _iUSCDeletar;

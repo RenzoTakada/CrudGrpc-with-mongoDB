@@ -11,7 +11,7 @@ namespace CRUDGrpcService.Application.UserCase.RegistrarUSC
 
         public async Task<string> RegistrarUSC(RequestUsuario request)
         {
-             _mongoRepository.RegistrarUsuarioRepository(MappingUsuario.MappingMongoUsuario(request));
+            _mongoRepository.RegistrarUsuarioRepository(MappingUsuario.MappingMongoUsuario(request));
 
             return "usuario Cadastrado com sucesso";
         }

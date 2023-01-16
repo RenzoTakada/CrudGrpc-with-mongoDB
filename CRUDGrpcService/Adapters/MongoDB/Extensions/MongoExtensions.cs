@@ -12,7 +12,7 @@ namespace CRUDGrpcService.Adapters.MongoDB.Extensions
                 .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json").Build();
 
             services.AddSingleton(x => configuration.GetSection("MongoDBConnection").Get<ConnectionMongo>());
-            services.AddScoped<IMongoRepository,MongoRepository>();
+            services.AddScoped<IMongoRepository, MongoRepository>();
             return services;
         }
     }

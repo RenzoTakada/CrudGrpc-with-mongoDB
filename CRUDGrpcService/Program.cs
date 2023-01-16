@@ -1,45 +1,42 @@
+using CRUDGrpcService.Adapters.Http;
 using CRUDGrpcService.Adapters.MongoDB.Extensions;
 using CRUDGrpcService.Application.Routs;
 using CRUDGrpcService.Application.UserCase.ConsultarUSC;
 using CRUDGrpcService.Application.UserCase.DeletarUSC;
 using CRUDGrpcService.Application.UserCase.RegistrarUSC;
-using CRUDGrpcService.Extensions;
+
 using Microsoft.AspNetCore.Server.Kestrel.Core;
-
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddGrpc();
-builder.Services.AddMongoDB();
-builder.Services.AddScoped<IUSCRegistrar, USCRegistrar>();
-builder.Services.AddScoped<IUSCConsultar, USCConsultar>();
-builder.Services.AddScoped<IUSCDeletar, USCDeletar>();
-//builder.Host.ConfigureWebHostDefaults(webBuilder =>
-// webBuilder.ConfigureKestrel(options =>
-// {
-//     options.ListenAnyIP(5001, o => o.Protocols = HttpProtocols.Http1);
-//     options.ListenAnyIP(5002, o => o.Protocols = HttpProtocols.Http2);
-// })
-//);
-
-//Host.CreateDefaultBuilder(args).ConfigureWebHostDefaults(webBuilder =>
-//{
-//  webBuilder.ConfigureKestrel(options =>
-//  {
-//      options.ListenAnyIP(5001, o => o.Protocols = HttpProtocols.Http1);
-//      options.ListenAnyIP(5002, o => o.Protocols = HttpProtocols.Http2);
-//  });
-//  webBuilder.ConfigureServices(services => services.AddGrpc());
-//  webBuilder.UseStartup<Startup>();
+using W3PIXHUBConsentimento.Extensions;
 
 
-//});
-//var startup = new Startup(builder.Configuration);
+    var builder = WebApplication.CreateBuilder(args);
 
-//startup.ConfigureServices(builder.Services);
+    builder.WebHost.ConfigureKestrel(options =>
+    {
+        options.ListenAnyIP(8086, o => o.Protocols = HttpProtocols.Http1);
+        options.ListenAnyIP(8088, o => o.Protocols = HttpProtocols.Http2);
+    });
 
-var app = builder.Build();
+          builder.Services.AddControllers();
+          builder.Services.AddGrpc();
+          builder.Services.AddMongoDB();
+          builder.Services.AddSwaggerConfigs();
+          builder.Services.AddScoped<IUSCRegistrar, USCRegistrar>();
+          builder.Services.AddScoped<IUSCConsultar, USCConsultar>();
+          builder.Services.AddScoped<IUSCDeletar, USCDeletar>();
 
-//startup.Configure(app, app.Environment);
-//app.MapSwagger();
-app.AddRouts();
-app.Run();
 
+          var app = builder.Build();
+
+          app.UseRouting();
+          //app.UseAuthentication();
+          //app.UseAuthorization();
+          app.MapGrpcService<ServiceConsultar>();
+          app.MapGrpcService<ServiceRegistar>();
+          app.MapGrpcService<ServiceDeletar>();
+          app.MapGrpcService<SeriviceAtualizar>();
+          app.AddEndpoints();
+        
+          app.MapSwagger();
+          app.Run();
+    

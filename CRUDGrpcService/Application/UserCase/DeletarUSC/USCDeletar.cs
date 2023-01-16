@@ -11,7 +11,7 @@ namespace CRUDGrpcService.Application.UserCase.DeletarUSC
 
         public async Task<baseReturn> DeletarUSC(RequestUsuario request)
         {
-              _mongoRepository.DeletarUsuarioRepository(MappingUsuario.MappingMongoUsuario(request));
+            _mongoRepository.DeletarUsuarioRepository(MappingUsuario.MappingMongoUsuario(request));
 
             return new baseReturn() { Status = 0, Mensagem = $" Usuario Deletado com Sucesso" };
         }

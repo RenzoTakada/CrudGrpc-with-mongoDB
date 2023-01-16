@@ -3,7 +3,7 @@ using CRUDGrpcService.Application.Mapping;
 
 namespace CRUDGrpcService.Application.UserCase.ConsultarUSC
 {
-    public class USCConsultar : BaseUsercase,IUSCConsultar
+    public class USCConsultar : BaseUsercase, IUSCConsultar
     {
         public USCConsultar(IMongoRepository mongoRepository) : base(mongoRepository)
         {

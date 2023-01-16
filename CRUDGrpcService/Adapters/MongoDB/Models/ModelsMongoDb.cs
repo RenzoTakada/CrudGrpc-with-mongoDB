@@ -18,7 +18,9 @@ namespace CRUDGrpcService.Adapters.MongoDB.Models
         [BsonElement("agencia")]
         public string agencia { get; set; }
         [BsonElement("saldo")]
-        public double saldo { get; set; 
+        public double saldo
+        {
+            get; set;
         }
 
     }
