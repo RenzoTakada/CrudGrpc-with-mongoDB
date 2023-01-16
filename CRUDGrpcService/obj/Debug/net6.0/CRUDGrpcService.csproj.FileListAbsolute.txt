@@ -43,3 +43,15 @@ C:\Users\renzo\source\repos\CRUDGrpcService\CRUDGrpcService\bin\Debug\net6.0\Zst
 C:\Users\renzo\source\repos\CRUDGrpcService\CRUDGrpcService\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
 C:\Users\renzo\source\repos\CRUDGrpcService\CRUDGrpcService\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
 C:\Users\renzo\source\repos\CRUDGrpcService\CRUDGrpcService\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
+C:\Users\renzo\source\repos\CRUDGrpcService\CRUDGrpcService\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\renzo\source\repos\CRUDGrpcService\CRUDGrpcService\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\renzo\source\repos\CRUDGrpcService\CRUDGrpcService\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\renzo\source\repos\CRUDGrpcService\CRUDGrpcService\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\renzo\source\repos\CRUDGrpcService\CRUDGrpcService\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\renzo\source\repos\CRUDGrpcService\CRUDGrpcService\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\renzo\source\repos\CRUDGrpcService\CRUDGrpcService\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\renzo\source\repos\CRUDGrpcService\CRUDGrpcService\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\renzo\source\repos\CRUDGrpcService\CRUDGrpcService\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\renzo\source\repos\CRUDGrpcService\CRUDGrpcService\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\renzo\source\repos\CRUDGrpcService\CRUDGrpcService\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\renzo\source\repos\CRUDGrpcService\CRUDGrpcService\obj\Debug\net6.0\CRUDGrpcService.MvcApplicationPartsAssemblyInfo.cs

@@ -3,7 +3,8 @@
     "CRUDGrpcService": {
       "commandName": "Project",
       "dotnetRunMessages": true,
-      "launchBrowser": false,
+      "launchBrowser": true,
+     // "launchUrl": "swagger",
       "applicationUrl": "http://localhost:5295;https://localhost:7243",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
