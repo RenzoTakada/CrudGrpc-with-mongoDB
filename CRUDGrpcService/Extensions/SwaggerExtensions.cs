@@ -69,7 +69,7 @@ namespace Extensions
         }
 
 
-        public static WebApplication MapSwagger(this WebApplication app)
+        public static WebApplication MapSwagger(this Iconf app)
         {
             if (app.Environment.IsDevelopment() || app.Environment.EnvironmentName == "Fabrica")
             {
