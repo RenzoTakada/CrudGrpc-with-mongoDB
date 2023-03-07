@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\renzo\\source\\repos\\CRUDGrpcService\\CRUDGrpcService\\CRUDGrpcService.csproj": {}
+    "C:\\Users\\renzo\\Documents\\Projects\\Estudos\\CRUDGrpcService\\CRUDGrpcService\\CRUDGrpcService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\renzo\\source\\repos\\CRUDGrpcService\\CRUDGrpcService\\CRUDGrpcService.csproj": {
+    "C:\\Users\\renzo\\Documents\\Projects\\Estudos\\CRUDGrpcService\\CRUDGrpcService\\CRUDGrpcService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\renzo\\source\\repos\\CRUDGrpcService\\CRUDGrpcService\\CRUDGrpcService.csproj",
+        "projectUniqueName": "C:\\Users\\renzo\\Documents\\Projects\\Estudos\\CRUDGrpcService\\CRUDGrpcService\\CRUDGrpcService.csproj",
         "projectName": "CRUDGrpcService",
-        "projectPath": "C:\\Users\\renzo\\source\\repos\\CRUDGrpcService\\CRUDGrpcService\\CRUDGrpcService.csproj",
+        "projectPath": "C:\\Users\\renzo\\Documents\\Projects\\Estudos\\CRUDGrpcService\\CRUDGrpcService\\CRUDGrpcService.csproj",
         "packagesPath": "C:\\Users\\renzo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\renzo\\source\\repos\\CRUDGrpcService\\CRUDGrpcService\\obj\\",
+        "outputPath": "C:\\Users\\renzo\\Documents\\Projects\\Estudos\\CRUDGrpcService\\CRUDGrpcService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\renzo\\AppData\\Roaming\\NuGet\\NuGet.Config",

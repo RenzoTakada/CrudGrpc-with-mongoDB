@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f8gWby0/Tjfuog29fUP41k8VZLqBN5bXBaTu9dTwrimFd+tztg1/+HjxwFsH4EAXjd4DeEUGZdVlp8CXZG9RQw==",
+  "dgSpecHash": "tvxbR5f3AUSf/+b3kGWtjHHP6hf0JKfEmnx4bsOG3CkwTQo08f/RbSp4LSGLK2RFatQ3FIBB1BdtmxP2Te6Okw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\renzo\\source\\repos\\CRUDGrpcService\\CRUDGrpcService\\CRUDGrpcService.csproj",
+  "projectFilePath": "C:\\Users\\renzo\\Documents\\Projects\\Estudos\\CRUDGrpcService\\CRUDGrpcService\\CRUDGrpcService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\renzo\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\renzo\\.nuget\\packages\\google.protobuf\\3.21.5\\google.protobuf.3.21.5.nupkg.sha512",

@@ -1,16 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace CRUDGrpcService.Adapters.Http
+namespace CRUDGrpcService.Application.Http
 {
-    public static  class Routs
+    public static class Routs
     {
         public static void AddEndpoints(this WebApplication app)
         {
-            app.MapGet("Consultar",  IResult ([FromQuery]string value) =>
+            app.MapGet("Consultar", IResult ([FromQuery] string value) =>
             {
                 return Results.Ok(value);
             });
-           
+
         }
 
     }

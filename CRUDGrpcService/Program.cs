@@ -1,5 +1,5 @@
-using CRUDGrpcService.Adapters.Http;
 using CRUDGrpcService.Adapters.MongoDB.Extensions;
+using CRUDGrpcService.Application.Http;
 using CRUDGrpcService.Application.Routs;
 using CRUDGrpcService.Application.UserCase.ConsultarUSC;
 using CRUDGrpcService.Application.UserCase.DeletarUSC;
@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Server.Kestrel.Core;
 using W3PIXHUBConsentimento.Extensions;
 
 
-    var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
 
     builder.WebHost.ConfigureKestrel(options =>
     {
